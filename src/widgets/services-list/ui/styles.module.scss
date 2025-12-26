@@ -1,0 +1,15 @@
+.place {
+	display: flex;
+	gap: 10px;
+	max-width: 60%;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1300px) {
+	.place {
+		max-width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+}

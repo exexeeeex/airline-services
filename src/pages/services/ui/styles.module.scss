@@ -1,7 +1,49 @@
 .page {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    &__content {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        &__list {
+            flex: 3;
+            min-width: 0;
+        }
+        &__summary {
+            flex: 1;
+            width: 100%;
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page {
+        &__content {
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 15px;
+        &__content {
+            flex-direction: column;
+            gap: 20px;
+            &__list {
+                width: 100%;
+            }
+            &__summary {
+                min-width: 100%;
+                position: static;
+                order: -1;
+            }
+        }
+    }
 }

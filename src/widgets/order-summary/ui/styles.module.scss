@@ -1,0 +1,14 @@
+.card {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--gray-50);
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        & h2 {
+            color: var(--gray-600);
+        }
+    }
+}

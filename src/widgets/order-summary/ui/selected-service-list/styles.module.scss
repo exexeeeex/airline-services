@@ -1,0 +1,21 @@
+.list {
+    width: 100%;
+    margin-top: 10px;
+    &__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dotted var(--gray-600);
+        padding-bottom: 6px;
+        &__name {
+            font-size: 20px;
+            font-weight: 600;
+            max-width: 280px;
+        }
+        &__price {
+            font-size: 17px;
+            font-weight: 600;
+        }
+    }
+}
